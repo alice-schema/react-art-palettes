@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+
+img {
+  box-sizing: border-box;
+  height: 800px;
+}
+
+body {
+  background-color:rgb(247, 230, 199);
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 4em;
+  color: #967434;
+  margin-top: 0.3em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+p {
+ width: 390px;
+ margin: 3em 0;
+ font-family: 'Cinzel';
+ text-align: justify;
+}
+
+a {
+  color: #967434;
+  text-decoration: none;
+}
+
+input {
+  margin-bottom: 2rem;
+  background-color: #f8f2de;
+  border: 1px #967434 solid;
+  padding: 0.8rem;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: 'Cinzel';
+}
+
+.image-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.artwork-container {
+  width: 500px;
+  margin-bottom: 3em;
+  padding: 2em;
+  border: 3px #967434 solid;
+  border-radius: 1em;
+  background-color: #f8f2de;
+}
+
+/*
+.artwork-container:hover {
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem #967434);
+}
+*/
+
+.palette {
+  display: flex;
+  flex-direction: row;
+  height: 5em;
+  justify-content: space-between;
+}
+
+.colorbox {
+  width: 18%;
+  height: 80%;
+  text-align: center;
+  border: 2px grey solid;
+  border-radius: 0.5em;
+  font-family: 'Cinzel';
+}
+
+.image-container {
+  position: relative;
+}
+
+
+.artwork {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.artwork-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+
+  box-sizing: border-box;
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-container:hover .artwork-info {
+  opacity: 0.8;
+}
+
+.artwork-info h3,
+.artwork-info h4 {
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+.artwork-info h3 {
+  font-weight: 500;
+  font-size: 1.85em;
+}
+
+.artwork-info h4 {
+  font-weight: 200;
+  font-size: 1em;
+}
